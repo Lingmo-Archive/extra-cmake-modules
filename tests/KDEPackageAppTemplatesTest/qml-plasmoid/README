@@ -1,0 +1,32 @@
+Lingmo Applet Template
+----------------------
+
+-- Build instructions --
+
+cd /where/your/applet/is/generated
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=MYPREFIX .. 
+make 
+make install
+
+(MYPREFIX is where you install your Lingmo setup, replace it accordingly)
+
+Restart lingmo to load the applet 
+(in a terminal type: 
+kquitapp lingmoshell 
+and then
+lingmoshell)
+
+or view it with 
+plasmoidviewer -a YourAppletName
+
+-- Tutorials and resources --
+The explanation of the template
+http://techbase.kde.org/index.php?title=Development/Tutorials/Lingmo/GettingStarted
+
+Lingmo techbase pages
+http://techbase.kde.org/Projects/Lingmo
+
+Lingmo QML API explained
+http://techbase.kde.org/Development/Tutorials/Lingmo/QML/API
